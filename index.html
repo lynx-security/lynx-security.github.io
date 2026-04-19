@@ -1,31 +1,374 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Lynx Security</title>
-  <style>
-    body{
-      background:#0b0f14;
-      color:white;
-      font-family:Arial,sans-serif;
-      max-width:900px;
-      margin:auto;
-      padding:60px 20px;
-    }
-    h1{font-size:48px;}
-    a{color:#58a6ff;}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lynx Security</title>
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#050505;
+    color:#ffffff;
+    font-family:Consolas, monospace;
+    line-height:1.6;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+.container{
+    width:90%;
+    max-width:1400px;
+    margin:auto;
+}
+
+header{
+    border-bottom:1px solid #161616;
+    background:#000;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 0;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:900;
+    color:#ff1a1a;
+    letter-spacing:2px;
+}
+
+.logo span{
+    color:#fff;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:28px;
+}
+
+nav ul li a{
+    color:#ccc;
+    transition:0.2s;
+}
+
+nav ul li a:hover{
+    color:#ff1a1a;
+}
+
+.hero{
+    min-height:92vh;
+    display:flex;
+    align-items:center;
+    background:
+    linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.88)),
+    url("https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=80");
+    background-size:cover;
+    background-position:center;
+    border-bottom:1px solid #111;
+}
+
+.hero-content{
+    max-width:760px;
+    padding:80px 0;
+}
+
+.tag{
+    color:#ff1a1a;
+    margin-bottom:14px;
+    font-size:14px;
+    letter-spacing:2px;
+}
+
+.hero h1{
+    font-size:72px;
+    line-height:1.05;
+    margin-bottom:20px;
+}
+
+.hero h1 span{
+    color:#ff1a1a;
+}
+
+.hero p{
+    color:#bdbdbd;
+    font-size:20px;
+    max-width:700px;
+    margin-bottom:35px;
+}
+
+.btn{
+    display:inline-block;
+    padding:16px 32px;
+    border:1px solid #ff1a1a;
+    color:#ff1a1a;
+    font-weight:bold;
+    transition:.25s;
+}
+
+.btn:hover{
+    background:#ff1a1a;
+    color:#000;
+}
+
+.section{
+    padding:80px 0;
+}
+
+.section-title{
+    font-size:42px;
+    margin-bottom:50px;
+}
+
+.section-title span{
+    color:#ff1a1a;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:24px;
+}
+
+.card{
+    border:1px solid #181818;
+    background:#090909;
+    padding:28px;
+    transition:.25s;
+}
+
+.card:hover{
+    border-color:#ff1a1a;
+    transform:translateY(-4px);
+}
+
+.card h3{
+    color:#ff1a1a;
+    margin-bottom:15px;
+    font-size:22px;
+}
+
+.card p{
+    color:#b8b8b8;
+}
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.stat{
+    text-align:center;
+    padding:28px;
+    border:1px solid #181818;
+    background:#080808;
+}
+
+.stat h2{
+    color:#ff1a1a;
+    font-size:48px;
+}
+
+.stat p{
+    color:#bcbcbc;
+    margin-top:8px;
+}
+
+footer{
+    border-top:1px solid #111;
+    padding:45px 0;
+    color:#888;
+}
+
+footer .foot{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+@media(max-width:900px){
+
+.hero h1{
+    font-size:52px;
+}
+
+nav{
+    flex-direction:column;
+    gap:18px;
+}
+
+nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+}
+
+@media(max-width:600px){
+
+.hero h1{
+    font-size:40px;
+}
+
+.hero p{
+    font-size:17px;
+}
+
+.section-title{
+    font-size:32px;
+}
+}
+</style>
 </head>
 <body>
-  <h1>Lynx Security</h1>
-  <p>Security research, offensive tooling, automation, and consulting.</p>
 
-  <h2>Projects</h2>
-  <ul>
-    <li><a href="#">Tool One</a></li>
-    <li><a href="#">Tool Two</a></li>
-  </ul>
+<header>
+<div class="container">
+<nav>
+<div class="logo">LYNX <span>SECURITY</span></div>
+
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#stats">Stats</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<section class="hero">
+<div class="container">
+<div class="hero-content">
+<div class="tag">OFFENSIVE SECURITY • RESEARCH • AUTOMATION</div>
+<h1>OFFENSIVE MINDSET.<br><span>DEFENSIVE IMPACT.</span></h1>
+<p>
+Lynx Security builds advanced offensive security tooling, red team automation,
+penetration testing workflows, and research-driven solutions to expose weaknesses before adversaries do.
+</p>
+<a href="#projects" class="btn">Explore Projects</a>
+</div>
+</div>
+</section>
+
+<section class="section" id="about">
+<div class="container">
+<h2 class="section-title">Why <span>Lynx</span></h2>
+
+<div class="grid">
+<div class="card">
+<h3>Red Teaming</h3>
+<p>Adversary simulation, internal compromise paths, phishing, persistence, and real-world attack methodology.</p>
+</div>
+
+<div class="card">
+<h3>Pentest Automation</h3>
+<p>Recon pipelines, reporting systems, scanning orchestration, evidence management, and workflow acceleration.</p>
+</div>
+
+<div class="card">
+<h3>Research</h3>
+<p>Exploit analysis, cloud misconfigurations, IAM abuse chains, web application attack surface studies.</p>
+</div>
+
+<div class="card">
+<h3>Reporting</h3>
+<p>Professional client-grade findings, executive summaries, remediation guidance, reproducible evidence.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section" id="projects">
+<div class="container">
+<h2 class="section-title">Featured <span>Projects</span></h2>
+
+<div class="grid">
+<div class="card">
+<h3>IUBU</h3>
+<p>Modern pentest reporting platform with templates, collaboration, and vulnerability tracking.</p>
+</div>
+
+<div class="card">
+<h3>ReconLynx</h3>
+<p>Automated reconnaissance framework for domains, assets, leaks, and exposed infrastructure.</p>
+</div>
+
+<div class="card">
+<h3>LynxOps</h3>
+<p>Operator toolkit for payload delivery, persistence tracking, and red team tasking.</p>
+</div>
+
+<div class="card">
+<h3>ReportForge</h3>
+<p>Generate polished penetration testing reports from raw findings and evidence.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section" id="stats">
+<div class="container">
+<h2 class="section-title">Operational <span>Metrics</span></h2>
+
+<div class="stats">
+<div class="stat">
+<h2>25+</h2>
+<p>Tools Built</p>
+</div>
+
+<div class="stat">
+<h2>100+</h2>
+<p>Assessments</p>
+</div>
+
+<div class="stat">
+<h2>24/7</h2>
+<p>Security Mindset</p>
+</div>
+
+<div class="stat">
+<h2>0</h2>
+<p>Tolerance For Weakness</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section" id="contact">
+<div class="container">
+<h2 class="section-title">Get In <span>Touch</span></h2>
+<p style="color:#bcbcbc; max-width:700px; margin-bottom:25px;">
+For consulting, tooling partnerships, private assessments, or research collaboration.
+</p>
+<a href="mailto:contact@lynx-security.com" class="btn">Contact Lynx</a>
+</div>
+</section>
+
+<footer>
+<div class="container">
+<div class="foot">
+<div>© 2026 Lynx Security</div>
+<div>Built for operators.</div>
+</div>
+</div>
+</footer>
+
 </body>
 </html>
-
