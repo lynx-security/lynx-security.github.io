@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tools | Lynx Security</title>
+    <meta name="description" content="Internal offensive security tools. Vulnerability scanners, reconnaissance frameworks, C2 platforms, and reporting engines built by operators.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="grid-bg" aria-hidden="true"></div>
+    
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="nav" role="navigation" aria-label="Main navigation">
+                <a href="../index.html" class="logo" aria-label="Lynx Security Home">
+                    <svg class="logo-icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                        <path d="M16 2L4 8v16l12 6 12-6V8L16 2z" stroke="currentColor" stroke-width="2"/>
+                        <path d="M16 2v28M4 8l12 6 12-6" stroke="currentColor" stroke-width="2"/>
+                        <circle cx="16" cy="16" r="4" fill="currentColor"/>
+                    </svg>
+                    <span class="logo-text">LYNX</span>
+                    <span class="logo-accent">SECURITY</span>
+                </a>
+                
+                <ul class="nav-menu" role="menubar">
+                    <li role="none"><a href="services.html" class="nav-link" role="menuitem">Services</a></li>
+                    <li role="none"><a href="tools.html" class="nav-link is-active" role="menuitem">Tools</a></li>
+                    <li role="none"><a href="https://wiki.lynx-security.study" class="nav-link" role="menuitem">Academy</a></li>
+                    <li role="none"><a href="about.html" class="nav-link" role="menuitem">About</a></li>
+                    <li role="none"><a href="contact.html" class="nav-link nav-link--cta" role="menuitem">Contact</a></li>
+                </ul>
+                
+                <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section tools-page">
+            <div class="container">
+                <header class="tools-page__hero reveal">
+                    <span class="section-tag">Internal Arsenal</span>
+                    <h1 class="page-header__title">Security Tools</h1>
+                    <p class="page-header__subtitle">Proprietary offensive security tools developed through hundreds of real engagements. Built by operators, for operators.</p>
+                </header>
+
+                <section class="tools-page__catalog reveal" aria-label="Tool catalog">
+                    <div class="feature-grid">
+                    <article class="card reveal">
+                        <span class="card__icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/>
+                                <path d="M12 8v4l3 3" stroke="currentColor" stroke-width="1.5"/>
+                            </svg>
+                        </span>
+                        <h3 class="card__title">SpectraScan</h3>
+                        <p class="card__desc">Modern vulnerability scanner with intelligent correlation. Detects complex vulnerability chains and prioritizes findings by actual business impact.</p>
+                        <div class="card__meta">
+                            <span class="card__tag">Production</span>
+                            <span class="card__tag">Scanner</span>
+                        </div>
+                        <a href="#" class="card__link">
+                            Details
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                                <path d="M3 8h10M10 5l3 3-3 3" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </a>
+                        <div class="shine"></div>
+                        <div class="background">
+                            <div class="tiles">
+                                <div class="tile tile-1"></div>
+                                <div class="tile tile-2"></div>
+                                <div class="tile tile-3"></div>
+                                <div class="tile tile-4"></div>
+                                <div class="tile tile-5"></div>
+                                <div class="tile tile-6"></div>
+                                <div class="tile tile-7"></div>
+                                <div class="tile tile-8"></div>
+                                <div class="tile tile-9"></div>
+                                <div class="tile tile-10"></div>
+                            </div>
+                            <div class="line line-1"></div>
+                            <div class="line line-2"></div>
+                            <div class="line line-3"></div>
+                        </div>
+                    </article>
+                    
+                    <article class="card reveal">
+                        <span class="card__icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 3L3 8v8l9 5 9-5V8L12 3z" stroke="currentColor" stroke-width="1.5"/>
+                                <path d="M12 12L3 8M12 12l9-5M12 12v9" stroke="currentColor" stroke-width="1.5"/>
+                            </svg>
+                        </span>
+                        <h3 class="card__title">PhantomRecon</h3>
+                        <p class="card__desc">Automated reconnaissance framework. Domain enumeration, asset discovery, leak detection, and exposed infrastructure mapping.</p>
+                        <div class="card__meta">
+                            <span class="card__tag">Production</span>
+                            <span class="card__tag">OSINT</span>
+                        </div>
+                        <a href="#" class="card__link">
+                            Details
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                                <path d="M3 8h10M10 5l3 3-3 3" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </a>
+                        <div class="shine"></div>
+                        <div class="background">
+                            <div class="tiles">
+                                <div class="tile tile-1"></div>
+                                <div class="tile tile-2"></div>
+                                <div class="tile tile-3"></div>
+                                <div class="tile tile-4"></div>
+                                <div class="tile tile-5"></div>
+                                <div class="tile tile-6"></div>
+                                <div class="tile tile-7"></div>
+                                <div class="tile tile-8"></div>
+                                <div class="tile tile-9"></div>
+                                <div class="tile tile-10"></div>
+                            </div>
+                            <div class="line line-1"></div>
+                            <div class="line line-2"></div>
+                            <div class="line line-3"></div>
+                        </div>
+                    </article>
+                    
+                    <article class="card reveal">
+                        <span class="card__icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="5" y="5" width="14" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/>
+                                <path d="M5 10h14M10 5v14" stroke="currentColor" stroke-width="1.5"/>
+                            </svg>
+                        </span>
+                        <h3 class="card__title">RedStream</h3>
+                        <p class="card__desc">C2 platform for red team operations. Encrypted communications, modular payload delivery, and session management for stealth engagements.</p>
+                        <div class="card__meta">
+                            <span class="card__tag">Beta</span>
+                            <span class="card__tag">C2</span>
+                        </div>
+                        <a href="#" class="card__link">
+                            Details
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                                <path d="M3 8h10M10 5l3 3-3 3" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </a>
+                        <div class="shine"></div>
+                        <div class="background">
+                            <div class="tiles">
+                                <div class="tile tile-1"></div>
+                                <div class="tile tile-2"></div>
+                                <div class="tile tile-3"></div>
+                                <div class="tile tile-4"></div>
+                                <div class="tile tile-5"></div>
+                                <div class="tile tile-6"></div>
+                                <div class="tile tile-7"></div>
+                                <div class="tile tile-8"></div>
+                                <div class="tile tile-9"></div>
+                                <div class="tile tile-10"></div>
+                            </div>
+                            <div class="line line-1"></div>
+                            <div class="line line-2"></div>
+                            <div class="line line-3"></div>
+                        </div>
+                    </article>
+                    
+                    <article class="card reveal">
+                        <span class="card__icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="6" y="6" width="12" height="12" rx="1.5" stroke="currentColor" stroke-width="1.5"/>
+                                <path d="M9 15l3-3 3 3M9 9h6" stroke="currentColor" stroke-width="1.5"/>
+                            </svg>
+                        </span>
+                        <h3 class="card__title">ReportForge</h3>
+                        <p class="card__desc">Report generation engine. Transform raw findings into polished, executive-ready penetration testing reports with consistent formatting.</p>
+                        <div class="card__meta">
+                            <span class="card__tag">Production</span>
+                            <span class="card__tag">Reporting</span>
+                        </div>
+                        <a href="#" class="card__link">
+                            Details
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                                <path d="M3 8h10M10 5l3 3-3 3" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </a>
+                        <div class="shine"></div>
+                        <div class="background">
+                            <div class="tiles">
+                                <div class="tile tile-1"></div>
+                                <div class="tile tile-2"></div>
+                                <div class="tile tile-3"></div>
+                                <div class="tile tile-4"></div>
+                                <div class="tile tile-5"></div>
+                                <div class="tile tile-6"></div>
+                                <div class="tile tile-7"></div>
+                                <div class="tile tile-8"></div>
+                                <div class="tile tile-9"></div>
+                                <div class="tile tile-10"></div>
+                            </div>
+                            <div class="line line-1"></div>
+                            <div class="line line-2"></div>
+                            <div class="line line-3"></div>
+                        </div>
+                    </article>
+                    
+                    <article class="card reveal">
+                        <span class="card__icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" stroke="currentColor" stroke-width="1.5"/>
+                            </svg>
+                        </span>
+                        <h3 class="card__title">ThreatPulse</h3>
+                        <p class="card__desc">Threat intelligence aggregation and analysis. Track emerging vulnerabilities, monitor dark web leaks, and receive alerts for your attack surface.</p>
+                        <div class="card__meta">
+                            <span class="card__tag">Beta</span>
+                            <span class="card__tag">Intel</span>
+                        </div>
+                        <a href="#" class="card__link">
+                            Details
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                                <path d="M3 8h10M10 5l3 3-3 3" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </a>
+                        <div class="shine"></div>
+                        <div class="background">
+                            <div class="tiles">
+                                <div class="tile tile-1"></div>
+                                <div class="tile tile-2"></div>
+                                <div class="tile tile-3"></div>
+                                <div class="tile tile-4"></div>
+                                <div class="tile tile-5"></div>
+                                <div class="tile tile-6"></div>
+                                <div class="tile tile-7"></div>
+                                <div class="tile tile-8"></div>
+                                <div class="tile tile-9"></div>
+                                <div class="tile tile-10"></div>
+                            </div>
+                            <div class="line line-1"></div>
+                            <div class="line line-2"></div>
+                            <div class="line line-3"></div>
+                        </div>
+                    </article>
+                    
+                    <article class="card reveal">
+                        <span class="card__icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="1.5"/>
+                                <path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.5"/>
+                            </svg>
+                        </span>
+                        <h3 class="card__title">VulnTrack</h3>
+                        <p class="card__desc">Continuous vulnerability management platform. Asset inventory, vulnerability lifecycle tracking, SLA monitoring, and executive dashboards.</p>
+                        <div class="card__meta">
+                            <span class="card__tag">Alpha</span>
+                            <span class="card__tag">VM</span>
+                        </div>
+                        <a href="#" class="card__link">
+                            Details
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                                <path d="M3 8h10M10 5l3 3-3 3" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </a>
+                        <div class="shine"></div>
+                        <div class="background">
+                            <div class="tiles">
+                                <div class="tile tile-1"></div>
+                                <div class="tile tile-2"></div>
+                                <div class="tile tile-3"></div>
+                                <div class="tile tile-4"></div>
+                                <div class="tile tile-5"></div>
+                                <div class="tile tile-6"></div>
+                                <div class="tile tile-7"></div>
+                                <div class="tile tile-8"></div>
+                                <div class="tile tile-9"></div>
+                                <div class="tile tile-10"></div>
+                            </div>
+                            <div class="line line-1"></div>
+                            <div class="line line-2"></div>
+                            <div class="line line-3"></div>
+                        </div>
+                    </article>
+                    </div>
+                </section>
+
+                <section class="tools-page__cta reveal" aria-label="Contributing">
+                    <span class="section-tag">Open Source</span>
+                    <h2 class="section-title">Contributing</h2>
+                    <p class="contact-desc">Some of our tools are available on GitHub. We welcome contributions from the security community.</p>
+                    <div class="button-row">
+                        <a href="https://github.com/lynx-security" class="btn btn--primary btn--large" target="_blank" rel="noopener noreferrer">
+                            <span>View on GitHub</span>
+                            <svg class="btn-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                                <path d="M3 8h10M10 5l3 3-3 3" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </a>
+                        <a href="contact.html" class="btn btn--secondary btn--large">
+                            <span>Request Access</span>
+                        </a>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="../index.html" class="footer-logo">
+                        <svg class="footer-logo__icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                            <path d="M16 2L4 8v16l12 6 12-6V8L16 2z" stroke="currentColor" stroke-width="2"/>
+                            <path d="M16 2v28M4 8l12 6 12-6" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="16" cy="16" r="4" fill="currentColor"/>
+                        </svg>
+                        <span class="footer-logo__text">LYNX SECURITY</span>
+                    </a>
+                    <p class="footer-tagline">Offensive security built with precision.</p>
+                </div>
+                
+                <nav class="footer-nav" aria-label="Footer navigation">
+                    <div class="footer-nav__col">
+                        <h4 class="footer-nav__title">Services</h4>
+                        <ul class="footer-nav__list">
+                            <li><a href="web-pentesting.html">Web Pentesting</a></li>
+                            <li><a href="network-pentesting.html">Network Pentesting</a></li>
+                            <li><a href="red-teaming.html">Red Teaming</a></li>
+                            <li><a href="adversary-simulation.html">Adversary Simulation</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav__col">
+                        <h4 class="footer-nav__title">Tools</h4>
+                        <ul class="footer-nav__list">
+                            <li><a href="tools.html">SpectraScan</a></li>
+                            <li><a href="tools.html">PhantomRecon</a></li>
+                            <li><a href="tools.html">RedStream</a></li>
+                            <li><a href="tools.html">ReportForge</a></li>
+                            <li><a href="tools.html">ThreatPulse</a></li>
+                            <li><a href="tools.html">VulnTrack</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav__col">
+                        <h4 class="footer-nav__title">Connect</h4>
+                        <ul class="footer-nav__list">
+                            <li><a href="https://github.com/lynx-security" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                            <li><a href="https://wiki.lynx-security.study">Academy</a></li>
+                            <li><a href="mailto:contact@lynx-security.study">Email</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="footer-copyright">© 2026 Lynx Security. All rights reserved.</p>
+                <p class="footer-built">Built for operators. Hosted on GitHub Pages.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js" defer></script>
+</body>
+</html>
